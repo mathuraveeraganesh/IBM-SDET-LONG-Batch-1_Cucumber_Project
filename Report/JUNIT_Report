@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="312.356848">
+<testcase classname="Counting Dashlets" name="Open the homepage and count the number of the dashlets on the page." time="23.3406">
+<system-out><![CDATA[Given User is on SuiteCRMUrl Login Page.....................................passed
+And User enters SuiteCRM UserNames and Passwords............................passed
+When Count the number of Dashlets and Print the No and title of each Dashlet.passed
+Then Close the CRMbrowser...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create leads using parameterization" name="Add information about a candidate for recruitment" time="37.913584">
+<system-out><![CDATA[Given User is on SuiteCRMUrl Login Page.....................................passed
+And User enters SuiteCRM UserNames and Passwords............................passed
+And Navigate to Sales -> Leads -> Create Lead...............................passed
+And And Fill in the required Create Lead fields using the "Mr." "Veera3" "Ganesh" "9987654398" and "8976543797" data from the Examples table.passed
+And Click Save to finish....................................................passed
+When Navigate to the View Leads page to see results "Veera3"................passed
+Then Close the CRMbrowser...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create leads using parameterization" name="Add information about a candidate for recruitment 2" time="37.810718">
+<system-out><![CDATA[Given User is on SuiteCRMUrl Login Page.....................................passed
+And User enters SuiteCRM UserNames and Passwords............................passed
+And Navigate to Sales -> Leads -> Create Lead...............................passed
+And And Fill in the required Create Lead fields using the "Mr." "Mathura3" "Ganesh" "9987654399" and "8976543798" data from the Examples table.passed
+And Click Save to finish....................................................passed
+When Navigate to the View Leads page to see results "Mathura3"..............passed
+Then Close the CRMbrowser...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Schedule a meeting and invite members" name="To schedule a meeting and include at least 3 invitees" time="45.052878">
+<system-out><![CDATA[Given User is on SuiteCRMUrl Login Page.....................................passed
+And User enters SuiteCRM UserNames and Passwords............................passed
+And Navigate to Activities -> Meetings -> Schedule a Meeting................passed
+And Enter the Subject "TestMathura" of the meeting..........................passed
+And Search for members "admin" and add them to the meeting..................passed
+And Click Save Meeting to finish............................................passed
+When Navigate to View Meetings page and confirm creation of the meeting for "TestMathura".passed
+Then Close the CRMbrowser...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Schedule a meeting and invite members" name="To schedule a meeting and include at least 3 invitees 2" time="44.639056">
+<system-out><![CDATA[Given User is on SuiteCRMUrl Login Page.....................................passed
+And User enters SuiteCRM UserNames and Passwords............................passed
+And Navigate to Activities -> Meetings -> Schedule a Meeting................passed
+And Enter the Subject "TestVeera" of the meeting............................passed
+And Search for members "max" and add them to the meeting....................passed
+And Click Save Meeting to finish............................................passed
+When Navigate to View Meetings page and confirm creation of the meeting for "TestVeera".passed
+Then Close the CRMbrowser...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Schedule a meeting and invite members" name="To schedule a meeting and include at least 3 invitees 3" time="44.298319">
+<system-out><![CDATA[Given User is on SuiteCRMUrl Login Page.....................................passed
+And User enters SuiteCRM UserNames and Passwords............................passed
+And Navigate to Activities -> Meetings -> Schedule a Meeting................passed
+And Enter the Subject "TestGanesh" of the meeting...........................passed
+And Search for members "chris" and add them to the meeting..................passed
+And Click Save Meeting to finish............................................passed
+When Navigate to View Meetings page and confirm creation of the meeting for "TestGanesh".passed
+Then Close the CRMbrowser...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creating a Product" name="To use an external data to add products" time="38.695738">
+<system-out><![CDATA[Given User is on SuiteCRMUrl Login Page.....................................passed
+And User enters SuiteCRM UserNames and Passwords............................passed
+And Navigate to All -> Products-> Create Product............................passed
+And Enter the productName "ProductTest" and Price "50"......................passed
+And Click Save To Create Product............................................passed
+When Go to the View Products page to see product "ProductTest" listed.......passed
+Then Close the CRMbrowser...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Creating a Product" name="To use an external data to add products 2" time="40.605955">
+<system-out><![CDATA[Given User is on SuiteCRMUrl Login Page.....................................passed
+And User enters SuiteCRM UserNames and Passwords............................passed
+And Navigate to All -> Products-> Create Product............................passed
+And Enter the productName "ProductTest2" and Price "70".....................passed
+And Click Save To Create Product............................................passed
+When Go to the View Products page to see product "ProductTest2" listed......passed
+Then Close the CRMbrowser...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
